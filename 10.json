@@ -1,0 +1,129 @@
+{
+    "input_info": {
+        "student_grade": "10th grade",
+        "theme": [
+            "rock band",
+            "diner",
+            "discusion",
+            "angry friends"
+        ],
+        "therapy_goal": "inferencing",
+        "scene_type": "medium shot (shows the subject from the waist up plus immediate details)"
+    },
+    "story": "Two members of a local rock band sit across from each other in a corner booth at a neon-lit diner. They’ve just finished a late-night gig, but instead of celebrating, tension fills the air. One of them feels betrayed because the other suggested replacing a bandmate, and the conversation has boiled over into an argument. Each friend has their own reason for being upset, but deep down, they both care about the band and fear losing the bond they’ve built through music. This is a critical moment in their friendship and in the future of their group.",
+    "scene_description": "Inside a retro diner bathed in warm, flickering neon light. The background hum of a jukebox mixes with the clinking of dishes and faint chatter from distant tables. A glossy red booth takes center stage, its shiny surfaces reflecting the glow of neon signs in the window. The mood is heavy and tense, with one friend leaning forward in frustration while the other sits back, defensive. The camera frames them waist-up, capturing their facial expressions, gestures, and the emotional charge between them. The surrounding details—condiment bottles, napkin holder, and a half-empty milkshake—add realism and texture to the scene.",
+    "items": [
+        "A teenage boy with messy dark hair wearing a faded black band t-shirt, leaning forward aggressively with hands flat on the diner table, brows furrowed in frustration.",
+        "A teenage girl with shoulder-length dyed blue hair, arms crossed over her chest, leaning back against the booth with narrowed eyes, wearing a denim jacket covered in band patches.",
+        "A shiny red diner booth with cushioned seats, positioned against the wall, reflecting neon light from the window.",
+        "A tall glass milkshake, half-finished, with a red-and-white striped straw bent slightly to the side, sitting on the table between them.",
+        "A napkin dispenser in chrome metal, catching reflections of the neon sign through the window.",
+        "Two condiment bottles—one ketchup, one mustard—side by side at the edge of the table, slightly crooked.",
+        "The edge of a jukebox visible in the background, softly glowing with multicolored lights.",
+        "A neon sign in the diner window, casting a red-blue glow onto the booth and table surface.",
+        "A ceramic plate with leftover fries, pushed to one side as if abandoned in the heat of the discussion.",
+        "A crumpled paper napkin on the table near the boy’s hand, suggesting nervous fidgeting."
+    ],
+    "questions": [
+        {
+            "question": "Why does the boy look upset?",
+            "options": [
+                "He is frustrated about the band decision",
+                "He is tired from the concert",
+                "He doesn’t like the diner food",
+                "He wants to leave early"
+            ],
+            "answer": "He is frustrated about the band decision"
+        },
+        {
+            "question": "What might the girl’s crossed arms suggest?",
+            "options": [
+                "She is relaxed and comfortable",
+                "She is defensive or upset",
+                "She is about to order food",
+                "She is cold"
+            ],
+            "answer": "She is defensive or upset"
+        },
+        {
+            "question": "Why is the milkshake only half-finished?",
+            "options": [
+                "They are distracted by their argument",
+                "The milkshake was not tasty",
+                "The waitress took it away early",
+                "It spilled on the table"
+            ],
+            "answer": "They are distracted by their argument"
+        },
+        {
+            "question": "What can you guess about their relationship?",
+            "options": [
+                "They are strangers meeting for the first time",
+                "They are close friends in conflict",
+                "They are siblings fighting over food",
+                "They are classmates studying together"
+            ],
+            "answer": "They are close friends in conflict"
+        },
+        {
+            "question": "Why might the boy have crumpled the napkin?",
+            "options": [
+                "He was bored",
+                "He was nervous or frustrated",
+                "He was playing a game",
+                "He was cleaning up a spill"
+            ],
+            "answer": "He was nervous or frustrated"
+        },
+        {
+            "question": "What can the neon glow across their faces suggest about the mood?",
+            "options": [
+                "The scene feels calm and peaceful",
+                "The scene feels tense and dramatic",
+                "The scene feels playful",
+                "The scene feels dark and sleepy"
+            ],
+            "answer": "The scene feels tense and dramatic"
+        },
+        {
+            "question": "What might the girl be worried about?",
+            "options": [
+                "Losing her place in the band",
+                "Not finishing her fries",
+                "Missing the bus home",
+                "The jukebox being too loud"
+            ],
+            "answer": "Losing her place in the band"
+        },
+        {
+            "question": "Why is the plate of fries pushed aside?",
+            "options": [
+                "They finished eating calmly",
+                "They abandoned food because of the argument",
+                "The fries were cold",
+                "The waitress asked them to move it"
+            ],
+            "answer": "They abandoned food because of the argument"
+        },
+        {
+            "question": "What might happen if they cannot resolve this conflict?",
+            "options": [
+                "The band could break apart",
+                "They will get free milkshakes",
+                "The jukebox will stop playing",
+                "They will have to order more food"
+            ],
+            "answer": "The band could break apart"
+        },
+        {
+            "question": "Why are they meeting in a diner after the concert?",
+            "options": [
+                "To eat fries and milkshakes only",
+                "To discuss the band in private",
+                "To listen to the jukebox",
+                "To plan a birthday party"
+            ],
+            "answer": "To discuss the band in private"
+        }
+    ]
+}
