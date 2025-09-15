@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Maker</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;500;600;700&family=Architects+Daughter&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Kalam', cursive;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #f7f3e9 0%, #f1ede4 100%);
+            height: 100vh;
+            margin: 0;
+            padding: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 24px,
+                    rgba(0, 0, 0, 0.05) 25px,
+                    rgba(0, 0, 0, 0.05) 26px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            height: calc(100vh - 30px);
+            background:
+                radial-gradient(circle at 10% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 0, 0, 0.02) 0%, transparent 20%),
+                radial-gradient(circle at 30% 70%, rgba(139, 69, 19, 0.03) 0%, transparent 15%),
+                linear-gradient(135deg, #fefefe 0%, #f8f6f0 100%);
+            border: 3px solid #e8e2d5;
+            border-radius: 8px;
+            box-shadow:
+                0 0 0 1px rgba(0, 0, 0, 0.05),
+                0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.08) 1px, transparent 1px),
+                radial-gradient(circle at 75% 75%, rgba(139, 69, 19, 0.06) 1px, transparent 1px);
+            background-size: 50px 50px, 80px 80px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .header {
+            background:
+                linear-gradient(135deg, rgba(70, 130, 180, 0.1) 0%, rgba(100, 149, 237, 0.05) 100%);
+            color: #2c3e50;
+            padding: 15px 20px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #d4c5b9;
+            position: relative;
+            z-index: 3;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 20px;
+            right: 20px;
+            height: 1px;
+            background: repeating-linear-gradient(90deg,
+                    #8b4513 0px,
+                    #8b4513 10px,
+                    transparent 10px,
+                    transparent 20px);
+            opacity: 0.3;
+        }
+
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: 600;
+            color: #2c3e50;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            transform: rotate(-1deg);
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .scene-selector {
+            background: #f8f6f0;
+            border: 2px solid #8b4513;
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: #2c3e50;
+            font-size: 1em;
+            font-family: 'Kalam', cursive;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            transform: rotate(0.5deg);
+        }
+
+        .scene-selector:focus {
+            outline: none;
+            background: #fff;
+            box-shadow:
+                0 0 0 3px rgba(139, 69, 19, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        }
+
+        .scene-selector option {
+            background: #f8f6f0;
+            color: #2c3e50;
+            font-family: 'Kalam', cursive;
+        }
+
+        .input-info {
+            background: #fff9e6;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 0.85em;
+            text-align: right;
+            border: 2px dashed #d4a574;
+            color: #5d4e37;
+            font-family: 'Architects Daughter', cursive;
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            transform: rotate(-0.5deg);
+        }
+
+        .input-info-item {
+            margin-bottom: 2px;
+        }
+
+        .input-info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .input-info-label {
+            font-weight: 600;
+            color: #8b4513;
+        }
+
+        .input-info-value {
+            color: #5d4e37;
+            font-weight: 400;
+        }
+
+        .main-content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 1024px;
+            max-width: 1024px;
+        }
+
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: #fff;
+            border: 3px solid #8b4513;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            cursor: crosshair;
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.1),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8);
+            transform: rotate(0.2deg);
+        }
+
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            right: 10px;
+            height: 20px;
+            background: rgba(139, 69, 19, 0.1);
+            border-radius: 50%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .scene-image {
+            /* width: 100%;
+            height: 100%;
+            object-fit: contain; */
+            border-radius: 10px;
+            /* transition: transform 0.1s ease;
+            transform-origin: center; */
+            aspect-ratio: 1/1;
+            height: 85vh;
+            width: auto;
+        }
+
+        .questions-section {
+            background:
+                linear-gradient(135deg, #fefefe 0%, #f8f6f0 100%);
+            border: 3px solid #d4c5b9;
+            border-radius: 12px;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.1),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8);
+            transform: rotate(-0.3deg);
+        }
+
+        .questions-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 29px,
+                    rgba(139, 69, 19, 0.1) 30px,
+                    rgba(139, 69, 19, 0.1) 31px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .questions-title {
+            text-align: center;
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+            flex-shrink: 0;
+            font-family: 'Caveat', cursive;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            transform: rotate(0.5deg);
+            position: relative;
+            z-index: 2;
+        }
+
+        #questionsContainer {
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 8px;
+            min-height: 0;
+            height: calc(99vh - 250px);
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .question-card {
+            background:
+                linear-gradient(135deg, #ffffff 0%, #fefcf7 100%);
+            border: 2px solid #d4c5b9;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow:
+                0 3px 6px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+            transform: rotate(0.1deg);
+        }
+
+        .question-card:nth-child(even) {
+            transform: rotate(-0.1deg);
+        }
+
+        .question-card:hover {
+            transform: translateY(-2px) rotate(0deg);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-card::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ff6b6b;
+            border-radius: 1px;
+        }
+
+        .question-text {
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-family: 'Kalam', cursive;
+            margin-left: 10px;
+            line-height: 1.4;
+        }
+
+        .options-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-left: 10px;
+        }
+
+        .option-button {
+            background: #f8f6f0;
+            color: #2c3e50;
+            border: 2px solid #8b4513;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-family: 'Kalam', cursive;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow:
+                0 3px 6px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            position: relative;
+        }
+
+        .option-button::before {
+            content: '○';
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            color: #8b4513;
+        }
+
+        .option-button {
+            padding-left: 28px;
+        }
+
+        .option-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            background: #fff;
+        }
+
+        .option-button.correct {
+            background: #d4edda;
+            color: #155724;
+            border-color: #28a745;
+            animation: correctPulse 0.6s ease;
+        }
+
+        .option-button.correct::before {
+            content: '●';
+            color: #28a745;
+        }
+
+        .option-button.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border-color: #dc3545;
+            animation: incorrectShake 0.6s ease;
+        }
+
+        .option-button.incorrect::before {
+            content: '✗';
+            color: #dc3545;
+        }
+
+        .option-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        @keyframes correctPulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes incorrectShake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-3px);
+            }
+
+            75% {
+                transform: translateX(3px);
+            }
+        }
+
+        .feedback {
+            margin-top: 12px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 0.9em;
+            font-family: 'Architects Daughter', cursive;
+            margin-left: 10px;
+        }
+
+        .feedback.show {
+            opacity: 1;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 2px dashed #28a745;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px dashed #dc3545;
+        }
+
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.4em;
+            color: #5d4e37;
+            font-family: 'Caveat', cursive;
+            font-weight: 500;
+        }
+
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #dc3545;
+            font-size: 1.4em;
+            font-family: 'Caveat', cursive;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .header-left,
+            .header-right {
+                align-items: center;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .input-info {
+                text-align: center;
+                font-size: 0.75em;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+            }
+
+            .left-panel {
+                order: 2;
+            }
+
+            .questions-section {
+                order: 1;
+                max-height: 40vh;
+            }
+
+            .options-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <h1>Scene Maker</h1>
+            </div>
+            <div class="header-right">
+                <select class="scene-selector" id="sceneSelector" onchange="changeScene()">
+                    <option value="1">Scene 1</option>
+                    <option value="2">Scene 2</option>
+                    <option value="3">Scene 3</option>
+                    <option value="4">Scene 4</option>
+                    <option value="5">Scene 5</option>
+                    <option value="6">Scene 6</option>
+                    <option value="7">Scene 7</option>
+                    <option value="8">Scene 8</option>
+                    <option value="9">Scene 9</option>
+                </select>
+                <div class="input-info" id="inputInfo" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">
+            Loading scene data...
+        </div>
+
+        <div id="error" class="error" style="display: none;">
+            Error loading scene data. Please check that the JSON and PNG files are in the same directory.
+        </div>
+
+        <div id="content" style="display: none;">
+            <div class="main-content">
+                <div class="left-panel">
+                    <div class="image-container">
+                        <img id="sceneImage" class="scene-image" src="" alt="Scene Image" />
+                    </div>
+                </div>
+
+                <div class="questions-section">
+                    <h2 class="questions-title">Answer the Questions</h2>
+
+                    <div id="questionsContainer"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sceneData = null;
+        let isImageZoomed = false;
+        let zoomLevel = 1;
+        let panX = 0;
+        let panY = 0;
+        let currentScene = 1;
+
+        // Load the JSON data for a specific scene
+        async function loadSceneData(sceneNumber = 1) {
+            try {
+                // Show loading state
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('error').style.display = 'none';
+                document.getElementById('content').style.display = 'none';
+
+                const response = await fetch(`${sceneNumber}.json`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load scene ${sceneNumber} data`);
+                }
+                sceneData = await response.json();
+                currentScene = sceneNumber;
+
+                // Update image source
+                document.getElementById('sceneImage').src = `${sceneNumber}.png`;
+
+                displayScene();
+            } catch (error) {
+                console.error('Error loading scene data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('content').style.display = 'none';
+            }
+        }
+
+        // Handle scene change from dropdown
+        function changeScene() {
+            const selector = document.getElementById('sceneSelector');
+            const selectedScene = parseInt(selector.value);
+            loadSceneData(selectedScene);
+        }
+
+        // Display the scene and questions
+        function displayScene() {
+            if (!sceneData) return;
+
+            // Hide loading, show content
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+
+
+            // Display input_info if available
+            displayInputInfo();
+
+            // Set up questions
+            const questionsContainer = document.getElementById('questionsContainer');
+            questionsContainer.innerHTML = '';
+
+            sceneData.questions.forEach((questionData, index) => {
+                const questionCard = createQuestionCard(questionData, index);
+                questionsContainer.appendChild(questionCard);
+            });
+
+            // Set up image zoom and pan functionality
+            setupImageInteraction();
+        }
+
+        // Display input_info in the header
+        function displayInputInfo() {
+            const inputInfoContainer = document.getElementById('inputInfo');
+
+            if (sceneData.input_info) {
+                const info = sceneData.input_info;
+                let infoHTML = '';
+
+                if (info.student_grade) {
+                    infoHTML += `<div class="input-info-item"><span class="input-info-label">Grade:</span> <span class="input-info-value">${info.student_grade}</span></div>`;
+                }
+
+                if (info.therapy_goal) {
+                    infoHTML += `<div class="input-info-item"><span class="input-info-label">Goal:</span> <span class="input-info-value">${info.therapy_goal}</span></div>`;
+                }
+
+                if (info.theme && Array.isArray(info.theme)) {
+                    infoHTML += `<div class="input-info-item"><span class="input-info-label">Theme:</span> <span class="input-info-value">${info.theme.join(', ')}</span></div>`;
+                }
+
+                if (info.scene_type) {
+                    infoHTML += `<div class="input-info-item"><span class="input-info-label">Shot:</span> <span class="input-info-value">${info.scene_type}</span></div>`;
+                }
+
+                if (infoHTML) {
+                    inputInfoContainer.innerHTML = infoHTML;
+                    inputInfoContainer.style.display = 'block';
+                } else {
+                    inputInfoContainer.style.display = 'none';
+                }
+            } else {
+                inputInfoContainer.style.display = 'none';
+            }
+        }
+
+        // Create a question card
+        function createQuestionCard(questionData, questionIndex) {
+            const card = document.createElement('div');
+            card.className = 'question-card';
+            card.id = `question-${questionIndex}`;
+
+            const questionText = document.createElement('div');
+            questionText.className = 'question-text';
+            questionText.textContent = `${questionIndex + 1}. ${questionData.question}`;
+
+            const optionsContainer = document.createElement('div');
+            optionsContainer.className = 'options-container';
+
+            questionData.options.forEach((option, optionIndex) => {
+                const button = document.createElement('button');
+                button.className = 'option-button';
+                button.textContent = option;
+                button.onclick = () => handleAnswer(questionIndex, option, questionData.answer, button);
+                optionsContainer.appendChild(button);
+            });
+
+            card.appendChild(questionText);
+            card.appendChild(optionsContainer);
+
+            return card;
+        }
+
+        // Handle answer selection
+        function handleAnswer(questionIndex, selectedAnswer, correctAnswer, clickedButton) {
+            const questionCard = document.getElementById(`question-${questionIndex}`);
+            const allButtons = questionCard.querySelectorAll('.option-button');
+
+            // Disable all buttons for this question
+            allButtons.forEach(button => {
+                button.disabled = true;
+            });
+
+            // Check if answer is correct
+            const isCorrect = selectedAnswer === correctAnswer;
+
+            if (isCorrect) {
+                clickedButton.classList.add('correct');
+            } else {
+                clickedButton.classList.add('incorrect');
+
+                // Highlight the correct answer
+                allButtons.forEach(button => {
+                    if (button.textContent === correctAnswer) {
+                        button.classList.add('correct');
+                    }
+                });
+            }
+        }
+
+        // Set up image zoom and pan interaction
+        function setupImageInteraction() {
+            const image = document.getElementById('sceneImage');
+            const container = document.querySelector('.image-container');
+
+            container.addEventListener('mousemove', (e) => {
+                const rect = container.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+
+                // Calculate zoom and pan based on mouse position
+                const zoomFactor = 1.5; // Zoom level when hovering
+
+                // Calculate pan range based on how much extra image we have when zoomed
+                // When zoomed by zoomFactor, the image is larger, so we can pan by the overflow amount
+                const panRangeX = (rect.width * (zoomFactor - 0.5)) / 2;
+                const panRangeY = (rect.height * (zoomFactor - 0.5)) / 2;
+
+                // Calculate pan offset based on mouse position
+                const panX = (x - 0.5) * panRangeX;
+                const panY = (y - 0.5) * panRangeY;
+
+                // Apply transform
+                image.style.transform = `scale(${zoomFactor}) translate(${-panX}px, ${-panY}px)`;
+            });
+
+            container.addEventListener('mouseleave', () => {
+                // Reset to original state when mouse leaves
+                image.style.transform = 'scale(1) translate(0, 0)';
+            });
+
+            // Add click to toggle zoom
+            container.addEventListener('click', () => {
+                if (isImageZoomed) {
+                    image.style.transform = 'scale(1) translate(0, 0)';
+                    container.style.cursor = 'crosshair';
+                    isImageZoomed = false;
+                } else {
+                    image.style.transform = 'scale(2) translate(0, 0)';
+                    container.style.cursor = 'grab';
+                    isImageZoomed = true;
+                }
+            });
+        }
+
+        // Handle image loading error
+        document.getElementById('sceneImage').onerror = function () {
+            this.alt = `Image not found (${currentScene}.png)`;
+            this.style.border = '2px dashed #ccc';
+            // this.style.padding = '50px';
+            this.style.backgroundColor = '#f8f9fa';
+        };
+
+        // Load scene data when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            loadSceneData(1); // Load scene 1 by default
+        });
+    </script>
+</body>
+</html>

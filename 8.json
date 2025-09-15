@@ -1,0 +1,128 @@
+{
+    "input_info": {
+        "student_grade": "1st grade",
+        "theme": [
+            "highschool",
+            "friends",
+            "guitar",
+            "rock band"
+        ],
+        "therapy_goal": "Semantics-wh-questions-mixed",
+        "scene_type": "medium shot (frames a subject from the waist up, capturing expressions and some background context)"
+    },
+    "scene_description": "The scene takes place inside a brightly lit high school music room. The walls are painted a cheerful light blue with posters of famous rock bands and colorful music notes decorating the space. Sunlight streams in through wide windows, making the instruments glimmer slightly. There’s a buzz of excitement in the air, like right before a performance, and the camera captures the warmth and energy of friends practicing together.",
+    "items": [
+        "A teenage boy holding a red electric guitar, wearing a black T-shirt with a lightning bolt on it, smiling confidently while strumming. He is standing slightly to the left of center, facing forward.",
+        "A teenage girl with long brown hair tied in a ponytail, wearing a denim jacket over a white shirt, sitting on a wooden stool while holding a microphone in both hands. She is leaning slightly forward as if ready to sing.",
+        "A boy with curly hair wearing a green hoodie, seated behind a drum set with sticks raised in mid-air, looking focused as he prepares to hit the drums.",
+        "A girl in glasses wearing a plaid skirt and yellow sweater, holding a notebook with lyrics written inside. She is looking toward the singer with an encouraging smile.",
+        "A shiny black amplifier positioned on the floor near the guitar player, angled slightly toward the camera.",
+        "A set of music stands in the background, some holding sheets of paper with handwritten notes.",
+        "A tall floor lamp with a golden glow standing near the back wall, adding extra warmth to the scene.",
+        "A poster of a famous rock band on the wall in the background, slightly tilted as if well-used.",
+        "A small group of colorful beanbag chairs scattered in the corner of the room, showing a relaxed hangout area.",
+        "A window with white curtains slightly swaying, letting sunlight and a faint breeze into the room."
+    ],
+    "questions": [
+        {
+            "question": "Who is holding the microphone?",
+            "options": [
+                "The boy with the guitar",
+                "The girl with a ponytail",
+                "The boy at the drums",
+                "The girl with glasses"
+            ],
+            "answer": "The girl with a ponytail"
+        },
+        {
+            "question": "What instrument is the boy in the black T-shirt playing?",
+            "options": [
+                "Drums",
+                "Guitar",
+                "Keyboard",
+                "Microphone"
+            ],
+            "answer": "Guitar"
+        },
+        {
+            "question": "Where are the beanbag chairs located?",
+            "options": [
+                "Near the window",
+                "In the corner of the room",
+                "Next to the amplifier",
+                "On top of the drum set"
+            ],
+            "answer": "In the corner of the room"
+        },
+        {
+            "question": "What color is the boy’s hoodie at the drums?",
+            "options": [
+                "Red",
+                "Green",
+                "Yellow",
+                "Blue"
+            ],
+            "answer": "Green"
+        },
+        {
+            "question": "Why is the girl with glasses holding a notebook?",
+            "options": [
+                "To write lyrics",
+                "To play guitar",
+                "To use as a drumstick",
+                "To block the sunlight"
+            ],
+            "answer": "To write lyrics"
+        },
+        {
+            "question": "What is hanging on the wall in the background?",
+            "options": [
+                "A painting of flowers",
+                "A poster of a rock band",
+                "A mirror",
+                "A chalkboard"
+            ],
+            "answer": "A poster of a rock band"
+        },
+        {
+            "question": "Which item is giving off a golden glow?",
+            "options": [
+                "The amplifier",
+                "The guitar",
+                "The floor lamp",
+                "The window"
+            ],
+            "answer": "The floor lamp"
+        },
+        {
+            "question": "What is the girl with the ponytail wearing?",
+            "options": [
+                "A denim jacket",
+                "A green hoodie",
+                "A plaid skirt",
+                "A black T-shirt"
+            ],
+            "answer": "A denim jacket"
+        },
+        {
+            "question": "Who looks focused while holding drumsticks?",
+            "options": [
+                "The boy with the guitar",
+                "The girl with a ponytail",
+                "The boy in the green hoodie",
+                "The girl with glasses"
+            ],
+            "answer": "The boy in the green hoodie"
+        },
+        {
+            "question": "What can be seen moving slightly by the window?",
+            "options": [
+                "The curtains",
+                "The amplifier",
+                "The music stand",
+                "The drumsticks"
+            ],
+            "answer": "The curtains"
+        }
+    ]
+}

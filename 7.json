@@ -1,0 +1,128 @@
+{
+    "input_info": {
+        "student_grade": "10th grade",
+        "theme": [
+            "highschool",
+            "friends",
+            "guitar",
+            "rock band"
+        ],
+        "therapy_goal": "Parts of Speech-Sentence Structure- Compound Sentences",
+        "scene_type": "medium shot (frames the subject from the waist up, showing facial expressions and body language clearly)"
+    },
+    "scene_description": "The shot is set in a brightly lit high school music room filled with posters of famous rock bands. Sunlight streams through tall windows, catching the glint of metal instruments and music stands scattered about. The camera frames a group of teenagers waist-up as they rehearse together, their faces animated with excitement and concentration. The atmosphere is energetic and filled with the imagined hum of amplifiers, the strum of guitar strings, and the clatter of drumsticks echoing off the walls. The scene feels alive with creativity and teenage camaraderie.",
+    "items": [
+        "A teenage boy with shaggy brown hair wearing a black band t-shirt, holding an electric guitar mid-strum, standing slightly left of center.",
+        "A girl with long blonde hair tied in a ponytail, wearing a denim jacket covered with band patches, holding a microphone with one hand while gesturing with the other.",
+        "A boy in glasses and a plaid shirt, seated behind a snare drum and cymbal, drumsticks frozen mid-air as if about to hit.",
+        "A girl with curly dark hair wearing a bright red hoodie, seated on a stool with a bass guitar resting against her knee, plucking a string with focus.",
+        "A music stand angled slightly toward the camera, displaying sheets of handwritten notes and lyrics.",
+        "A poster of a famous rock band taped to the wall behind the group, slightly crumpled at the edges.",
+        "A large amplifier pushed against the back wall with its knobs and dials catching the sunlight.",
+        "A stack of guitar cases leaning against the far corner, partially visible in the frame.",
+        "A bulletin board filled with colorful flyers advertising upcoming school concerts, pinned neatly with thumbtacks.",
+        "A tall window on the right side of the frame with warm sunlight filtering through the blinds, casting striped shadows across the floor and instruments."
+    ],
+    "questions": [
+        {
+            "question": "Which sentence correctly uses a compound sentence?",
+            "options": [
+                "He played the guitar, and she sang into the microphone.",
+                "He played the guitar loudly.",
+                "She sang beautifully into the microphone.",
+                "The drumsticks hit the snare drum."
+            ],
+            "answer": "He played the guitar, and she sang into the microphone."
+        },
+        {
+            "question": "Which option shows two independent clauses joined correctly?",
+            "options": [
+                "The boy strummed the guitar, but the amplifier was too quiet.",
+                "The boy strummed the guitar loudly.",
+                "The amplifier was too quiet for the performance.",
+                "The drumsticks broke quickly."
+            ],
+            "answer": "The boy strummed the guitar, but the amplifier was too quiet."
+        },
+        {
+            "question": "Which word is a conjunction in the sentence: 'She sang into the microphone, and the crowd cheered loudly'?",
+            "options": [
+                "She",
+                "sang",
+                "and",
+                "crowd"
+            ],
+            "answer": "and"
+        },
+        {
+            "question": "Which is an example of a compound sentence?",
+            "options": [
+                "The posters hung on the wall, and the sunlight streamed through the windows.",
+                "The posters hung on the wall brightly.",
+                "The sunlight streamed through the windows.",
+                "The guitar made a loud sound."
+            ],
+            "answer": "The posters hung on the wall, and the sunlight streamed through the windows."
+        },
+        {
+            "question": "In the sentence 'He hit the drum, but the stick broke in half,' which part is the second independent clause?",
+            "options": [
+                "He hit the drum",
+                "but",
+                "the stick broke in half",
+                "drum"
+            ],
+            "answer": "the stick broke in half"
+        },
+        {
+            "question": "Which sentence combines two ideas with a conjunction?",
+            "options": [
+                "She wore a denim jacket, and she sang into the microphone.",
+                "She wore a denim jacket with patches.",
+                "She sang into the microphone loudly.",
+                "The microphone was silver and shiny."
+            ],
+            "answer": "She wore a denim jacket, and she sang into the microphone."
+        },
+        {
+            "question": "Which is NOT a compound sentence?",
+            "options": [
+                "The drummer raised his sticks, and the guitarist tuned his strings.",
+                "The bassist played the notes, but the amp buzzed loudly.",
+                "The posters hung on the wall, and the sunlight shone in.",
+                "The singer held the microphone tightly."
+            ],
+            "answer": "The singer held the microphone tightly."
+        },
+        {
+            "question": "Which is the correct way to write a compound sentence?",
+            "options": [
+                "The guitar case leaned in the corner, and the amplifier hummed softly.",
+                "The guitar case leaned in the corner quietly.",
+                "The amplifier hummed softly in the room.",
+                "The posters showed famous rock bands."
+            ],
+            "answer": "The guitar case leaned in the corner, and the amplifier hummed softly."
+        },
+        {
+            "question": "In the sentence 'The band rehearsed their song, and the teacher clapped for them,' which word is the coordinating conjunction?",
+            "options": [
+                "band",
+                "rehearsed",
+                "and",
+                "teacher"
+            ],
+            "answer": "and"
+        },
+        {
+            "question": "Which sentence shows proper compound sentence structure?",
+            "options": [
+                "The drummer smiled, and the bassist laughed.",
+                "The drummer smiled happily.",
+                "The bassist laughed loudly.",
+                "The posters were bright and colorful."
+            ],
+            "answer": "The drummer smiled, and the bassist laughed."
+        }
+    ]
+}

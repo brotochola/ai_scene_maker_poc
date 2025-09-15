@@ -1,0 +1,126 @@
+{
+    "input_info": {
+        "student_grade": "1st grade",
+        "theme": [
+            "highschool",
+            "guitar"
+        ],
+        "therapy_goal": "Semantics-wh-questions-mixed",
+        "scene_type": "close up (shows detail of a subject, tightly framing their face or an object with minimal background)"
+    },
+    "scene_description": "The camera zooms in tightly on a bright, youthful moment inside a cheerful high school music room. Warm sunlight filters through a tall window, scattering golden highlights on shiny wooden floors. The background is softly blurred, with faint hints of posters and lockers, so all focus stays on the subject. The close-up shot captures vivid detail—the shine of polished wood, the tiny scratches from use, and the bright colors around the student’s face. The room feels full of quiet excitement, as if music is about to burst into the scene.",
+    "items": [
+        "A 12-year-old student with short brown hair, wearing a light blue t-shirt with a school logo. The student’s face is framed closely, smiling with curiosity and joy.",
+        "The student’s hands resting on a dark brown acoustic guitar, angled slightly upward so the strings catch the light.",
+        "A red guitar pick held between the student’s fingers, in sharp focus as if ready to strum.",
+        "The polished wooden body of the guitar, tilted toward the camera, showing fine grain details.",
+        "A faint reflection of the window’s sunlight across the shiny surface of the guitar body.",
+        "A colorful friendship bracelet on the student’s wrist, small beads glowing softly in the light.",
+        "Part of a blurred poster of musical notes in the background, indistinct but suggesting a school music theme.",
+        "The edge of the guitar strap, black with tiny embroidered stars, visible near the student’s shoulder.",
+        "The soft focus outline of lockers in the background, painted bright blue, adding context to the high school setting.",
+        "A pair of small headphones resting around the student’s neck, slightly tilted, with shiny silver edges."
+    ],
+    "questions": [
+        {
+            "question": "Who is holding the guitar?",
+            "options": [
+                "The student",
+                "The teacher",
+                "The janitor",
+                "The librarian"
+            ],
+            "answer": "The student"
+        },
+        {
+            "question": "What color is the student’s t-shirt?",
+            "options": [
+                "Blue",
+                "Red",
+                "Yellow",
+                "Green"
+            ],
+            "answer": "Blue"
+        },
+        {
+            "question": "Where is this scene taking place?",
+            "options": [
+                "High school music room",
+                "Cafeteria",
+                "Playground",
+                "Library"
+            ],
+            "answer": "High school music room"
+        },
+        {
+            "question": "What is the student holding in their hand besides the guitar?",
+            "options": [
+                "A book",
+                "A guitar pick",
+                "A pencil",
+                "A phone"
+            ],
+            "answer": "A guitar pick"
+        },
+        {
+            "question": "Why is the background blurred?",
+            "options": [
+                "To hide the classroom",
+                "To focus on the guitar and student",
+                "Because the window is broken",
+                "To show the lockers clearly"
+            ],
+            "answer": "To focus on the guitar and student"
+        },
+        {
+            "question": "What is shining on the guitar surface?",
+            "options": [
+                "Sunlight",
+                "Flashlight",
+                "Stage lights",
+                "Moonlight"
+            ],
+            "answer": "Sunlight"
+        },
+        {
+            "question": "When do you usually see lockers in school?",
+            "options": [
+                "At recess",
+                "In a high school hallway",
+                "At the gym",
+                "During lunch only"
+            ],
+            "answer": "In a high school hallway"
+        },
+        {
+            "question": "Which object is worn around the student’s wrist?",
+            "options": [
+                "A bracelet",
+                "A watch",
+                "A rubber band",
+                "A ring"
+            ],
+            "answer": "A bracelet"
+        },
+        {
+            "question": "What is hanging around the student’s neck?",
+            "options": [
+                "A necklace",
+                "Headphones",
+                "A scarf",
+                "A camera"
+            ],
+            "answer": "Headphones"
+        },
+        {
+            "question": "What can the student do with the guitar pick?",
+            "options": [
+                "Draw a picture",
+                "Strum the guitar",
+                "Write on paper",
+                "Play soccer"
+            ],
+            "answer": "Strum the guitar"
+        }
+    ]
+}

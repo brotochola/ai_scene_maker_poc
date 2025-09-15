@@ -1,0 +1,126 @@
+{
+    "input_info": {
+        "student_grade": "7th grade",
+        "theme": [
+            "cafe",
+            "people"
+        ],
+        "therapy_goal": "Compound Sentences",
+        "scene_type": "extreme long shot (shows a wide view of the entire scene with many groups and landscape elements)"
+    },
+    "scene_description": "A bustling outdoor cafe stretches along a cobblestone street under a bright afternoon sun. The warm yellow and orange awnings ripple gently in the breeze. Aromas of freshly baked bread and roasted coffee mingle with the crisp scent of nearby flowers. Patrons sit at small round tables, chatting, laughing, and waving to friends. In the distance, a street musician plays a lively tune on a violin, and pigeons flutter between the tables. The buildings around are painted in pastel colors, with ivy climbing up their walls, and the street reflects a lively, cheerful vibe.",
+    "items": [
+        "A barista wearing a black apron and white shirt stands behind the counter, pouring coffee with a focused expression.",
+        "A young woman with a red scarf sits at a table near the edge of the cafe, reading a book and occasionally sipping her latte.",
+        "Two friends, a boy in a blue hoodie and a girl in a yellow dress, laugh together as they share a slice of cake at a corner table.",
+        "An elderly couple holding hands, seated at a small round table, smiling at each other while enjoying pastries.",
+        "A street musician wearing a brown hat and vest plays the violin near the entrance, with a small open case for tips.",
+        "A waiter carrying a tray of drinks navigates carefully between tables, wearing a white shirt and black pants.",
+        "A dog with a spotted coat sits under a table, wagging its tail, while its owner scratches behind its ears.",
+        "A group of teenagers skate past the cafe on the cobblestone street, chatting and pointing at something funny.",
+        "Several pigeons peck at crumbs scattered on the ground, occasionally taking flight into the sunlit sky.",
+        "A pastel green building at the back has ivy climbing its walls and small balconies with colorful flower pots."
+    ],
+    "questions": [
+        {
+            "question": "Which sentence correctly uses a compound structure?",
+            "options": [
+                "The barista pours coffee, and the young woman reads her book.",
+                "The dog wagged its tail the waiter carried drinks.",
+                "The musician plays violin he collects tips.",
+                "The friends laugh sharing a cake they are happy."
+            ],
+            "answer": "The barista pours coffee, and the young woman reads her book."
+        },
+        {
+            "question": "Choose the sentence that combines two actions using 'but':",
+            "options": [
+                "The teens skate past, but they trip over a stone.",
+                "The elderly couple smiles and enjoys pastries.",
+                "The musician plays violin, the barista serves coffee.",
+                "The pigeons peck at crumbs they fly into the sky."
+            ],
+            "answer": "The teens skate past, but they trip over a stone."
+        },
+        {
+            "question": "Which sentence shows two related events connected by 'so'?",
+            "options": [
+                "The dog wagged its tail, so the young woman petted it.",
+                "The barista pours coffee and the musician plays violin.",
+                "The teens skate quickly, they laugh loudly.",
+                "The elderly couple enjoys pastries but they hold hands."
+            ],
+            "answer": "The dog wagged its tail, so the young woman petted it."
+        },
+        {
+            "question": "Identify the sentence that correctly joins two independent clauses:",
+            "options": [
+                "The waiter navigates the tables, and the friends laugh at something funny.",
+                "The friends laugh, the waiter carries drinks.",
+                "The musician plays violin the barista serves coffee.",
+                "The dog sits, the young woman reads."
+            ],
+            "answer": "The waiter navigates the tables, and the friends laugh at something funny."
+        },
+        {
+            "question": "Which sentence is a compound sentence?",
+            "options": [
+                "The pigeons peck at crumbs, and they occasionally take flight.",
+                "The young woman reads a book.",
+                "The barista pours coffee.",
+                "The street musician plays violin."
+            ],
+            "answer": "The pigeons peck at crumbs, and they occasionally take flight."
+        },
+        {
+            "question": "Select the sentence that combines two ideas with 'or':",
+            "options": [
+                "You can sit at the table, or you can stand near the counter.",
+                "The teens skate past and point at something.",
+                "The dog sits under the table and wags its tail.",
+                "The musician plays violin so people tip him."
+            ],
+            "answer": "You can sit at the table, or you can stand near the counter."
+        },
+        {
+            "question": "Which of these sentences correctly uses a compound structure with 'yet'?",
+            "options": [
+                "The musician plays loudly, yet the barista keeps working calmly.",
+                "The friends laugh and eat cake.",
+                "The pigeons fly away and land again.",
+                "The elderly couple holds hands and smiles."
+            ],
+            "answer": "The musician plays loudly, yet the barista keeps working calmly."
+        },
+        {
+            "question": "Choose the sentence that combines two actions properly:",
+            "options": [
+                "The young woman sips her latte, and she turns a page in her book.",
+                "The teens skate they laugh together.",
+                "The barista pours coffee he smiles.",
+                "The dog wags its tail it barks."
+            ],
+            "answer": "The young woman sips her latte, and she turns a page in her book."
+        },
+        {
+            "question": "Which sentence correctly links two ideas with 'for'?",
+            "options": [
+                "The waiter carries drinks carefully, for the floor is slippery.",
+                "The dog sits under the table and wags its tail.",
+                "The musician plays violin, and people tip him.",
+                "The teens skate past and laugh loudly."
+            ],
+            "answer": "The waiter carries drinks carefully, for the floor is slippery."
+        },
+        {
+            "question": "Identify the correctly formed compound sentence:",
+            "options": [
+                "The elderly couple smiles, and they enjoy pastries together.",
+                "The friends laugh, they eat cake.",
+                "The musician plays violin he collects tips.",
+                "The dog sits, the young woman reads."
+            ],
+            "answer": "The elderly couple smiles, and they enjoy pastries together."
+        }
+    ]
+}

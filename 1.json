@@ -1,0 +1,76 @@
+{
+    "input_info": {
+        "student_grade": "3rd grade",
+        "theme": [
+            "snowboarding",
+            "snow",
+            "winter"
+        ],
+        "therapy_goal": "Semantics-wh-questions-mixed",
+        "scene_type": "long shot"
+    },
+    "scene_description": "The wide slope stretches down the snowy mountain, dotted with tracks where people have already ridden. A snowboarder in bright colors speeds across the slope, their whole body visible as they balance on the board. The scene captures both the rider and the crisp winter setting: the tall pine trees in the distance, the sparkling snow, and the open blue sky overhead.",
+    "items": [
+        "A snowboarder in a red jacket and black helmet gliding down the slope",
+        "A full view of the snowboarder’s blue snowboard carving a path in the snow",
+        "Snow spraying behind the snowboarder’s board as they turn",
+        "Tall pine trees lining the slope in the background",
+        "The snow-covered mountain stretching upward behind the trees",
+        "A skier in a yellow jacket standing farther up the hill",
+        "A wooden ski lodge with a smoking chimney at the bottom of the slope",
+        "Bright sunlight casting long shadows across the snow"
+    ],
+    "scene_type": "long shot (shows the entire subject head-to-toe along with their surroundings)",
+    "questions": [
+        {
+            "question": "Who is gliding down the slope?",
+            "options": [
+                "The snowboarder",
+                "The skier",
+                "The children",
+                "The lodge keeper"
+            ],
+            "answer": "The snowboarder"
+        },
+        {
+            "question": "What is the snowboarder wearing on their head?",
+            "options": [
+                "A helmet",
+                "A crown",
+                "A scarf",
+                "A hat"
+            ],
+            "answer": "A helmet"
+        },
+        {
+            "question": "Where is the ski lodge?",
+            "options": [
+                "At the bottom of the slope",
+                "At the top of the mountain",
+                "Inside the forest",
+                "Next to the snowboarder"
+            ],
+            "answer": "At the bottom of the slope"
+        },
+        {
+            "question": "Why are shadows stretching across the snow?",
+            "options": [
+                "Because the sun is shining",
+                "Because the snowboarder drew them",
+                "Because of the wind",
+                "Because the snow is melting"
+            ],
+            "answer": "Because the sun is shining"
+        },
+        {
+            "question": "When might the skier in the yellow jacket go down the hill?",
+            "options": [
+                "After waiting their turn",
+                "During summer vacation",
+                "When the lodge closes",
+                "At night while sleeping"
+            ],
+            "answer": "After waiting their turn"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "input_info": {
+        "student_grade": "7th grade",
+        "theme": [
+            "cafe",
+            "people"
+        ],
+        "therapy_goal": "Semantics-wh-questions-mixed",
+        "scene_type": "extreme long shot (ELS/EWS: many broad details, landscape, multiple groups)"
+    },
+    "scene_description": "A busy outdoor cafe on a sunny afternoon, the golden sunlight reflecting off the cobblestone street. Tables with colorful umbrellas dot the wide sidewalk, while people walk by chatting, laughing, and sipping drinks. The scent of coffee and pastries fills the air, mixed with faint sounds of distant traffic and birdsong. Buildings with bright murals line the background, and a small fountain splashes gently in the plaza. The overall vibe is lively and cheerful, with a sense of movement and activity in every corner.",
+    "items": [
+        "A barista behind the cafe counter wearing a white apron and a black t-shirt, smiling as they hand a cup of coffee to a customer, positioned slightly to the left side of the cafe.",
+        "A young couple sitting at a table under a red umbrella, the girl wearing a blue dress and the boy wearing a green t-shirt, both laughing and holding croissants.",
+        "A group of three friends walking past the cafe, one holding a skateboard, another with a backpack slung over their shoulder, chatting animatedly.",
+        "A man reading a newspaper at a corner table, wearing a brown jacket and glasses, with a half-full cup of cappuccino on the table.",
+        "A waiter balancing a tray of drinks, wearing a black vest and white shirt, slightly leaning forward as he moves between tables.",
+        "A small brown dog sitting under a chair, looking up at its owner expectantly, its leash loosely held by the owner.",
+        "A street musician near the fountain playing a guitar, with a small open case for tips, wearing a hat and casual jeans.",
+        "A cyclist in a yellow helmet riding past the cafe along the cobblestone street, slightly blurred in motion.",
+        "A table with a vase of sunflowers, cups of coffee, and a half-eaten pastry, placed in the center of the foreground.",
+        "A colorful mural on the building in the background depicting a sunny landscape with mountains and trees."
+    ],
+    "questions": [
+        {
+            "question": "Who is handing a cup of coffee to a customer?",
+            "options": [
+                "The young couple",
+                "The barista",
+                "The waiter",
+                "The man reading a newspaper"
+            ],
+            "answer": "The barista"
+        },
+        {
+            "question": "What color is the girl's dress sitting under the red umbrella?",
+            "options": [
+                "Green",
+                "Blue",
+                "Yellow",
+                "Red"
+            ],
+            "answer": "Blue"
+        },
+        {
+            "question": "Where is the street musician located?",
+            "options": [
+                "Under a table",
+                "Near the fountain",
+                "On a skateboard",
+                "At the counter"
+            ],
+            "answer": "Near the fountain"
+        },
+        {
+            "question": "Who is balancing a tray of drinks?",
+            "options": [
+                "The barista",
+                "The waiter",
+                "The man reading a newspaper",
+                "The cyclist"
+            ],
+            "answer": "The waiter"
+        },
+        {
+            "question": "What animal is under a chair near the cafe?",
+            "options": [
+                "A cat",
+                "A dog",
+                "A bird",
+                "A rabbit"
+            ],
+            "answer": "A dog"
+        },
+        {
+            "question": "Which activity is the group of three friends doing?",
+            "options": [
+                "Eating pastries",
+                "Walking past the cafe",
+                "Reading a newspaper",
+                "Playing guitar"
+            ],
+            "answer": "Walking past the cafe"
+        },
+        {
+            "question": "What is on the table in the center of the foreground?",
+            "options": [
+                "A vase of sunflowers and coffee cups",
+                "A guitar and tip case",
+                "Newspaper and glasses",
+                "A skateboard and backpack"
+            ],
+            "answer": "A vase of sunflowers and coffee cups"
+        },
+        {
+            "question": "Which character is slightly blurred in motion?",
+            "options": [
+                "The waiter",
+                "The cyclist",
+                "The barista",
+                "The young couple"
+            ],
+            "answer": "The cyclist"
+        },
+        {
+            "question": "What is the man at the corner table doing?",
+            "options": [
+                "Reading a newspaper",
+                "Balancing a tray",
+                "Playing guitar",
+                "Walking past the cafe"
+            ],
+            "answer": "Reading a newspaper"
+        },
+        {
+            "question": "What is depicted on the mural in the background?",
+            "options": [
+                "A beach scene",
+                "A sunny landscape with mountains and trees",
+                "A city skyline",
+                "A dog and cat playing"
+            ],
+            "answer": "A sunny landscape with mountains and trees"
+        }
+    ]
+}

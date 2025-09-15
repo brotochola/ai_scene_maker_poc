@@ -1,0 +1,77 @@
+{
+    "input_info": {
+        "student_grade": "10th grade",
+        "theme": [
+            "kitchen",
+            "food",
+            "cooking"
+        ],
+        "therapy_goal": "sequencing",
+        "scene_type": "long shot (shows the entire subject head-to-toe along with their surroundings)"
+    },
+    "scene_description": "The kitchen is bright and bustling with activity. Sunlight streams through a large window, reflecting off the shiny countertops and colorful utensils. The aroma of freshly baked bread mixes with sizzling vegetables on the stove. A large wooden table is in the center, surrounded by chairs, with bowls of ingredients scattered across it. Pots and pans hang from hooks above, and a kettle whistles softly on the stove. The tiled floor gleams, and the fridge hums quietly in the background, creating a warm, lively atmosphere.",
+    "items": [
+        "A chef wearing a white apron, stirring a large pot on the stove",
+        "A young assistant chopping vegetables on a cutting board",
+        "Bowls of ingredients including flour, eggs, and chopped herbs on the table",
+        "A tray of freshly baked cookies cooling on a wire rack",
+        "A kettle whistling softly on the stove",
+        "Pots and pans hanging from hooks above the stove",
+        "A fridge with magnets and notes on its door",
+        "Sunlight reflecting off shiny countertops",
+        "A rolling pin and dough ready to be shaped",
+        "A colorful assortment of utensils in a jar on the counter"
+    ],
+    "questions": [
+        {
+            "question": "What did the chef do first in the kitchen?",
+            "options": [
+                "Stir the pot on the stove",
+                "Chop vegetables",
+                "Place cookies on the wire rack",
+                "Hang pots and pans"
+            ],
+            "answer": "Chop vegetables"
+        },
+        {
+            "question": "Which action comes after mixing ingredients in a bowl?",
+            "options": [
+                "Bake in the oven",
+                "Chop vegetables",
+                "Whistle with the kettle",
+                "Hang utensils"
+            ],
+            "answer": "Bake in the oven"
+        },
+        {
+            "question": "What likely happened just before the cookies were on the wire rack?",
+            "options": [
+                "They were baked in the oven",
+                "The chef stirred a pot",
+                "The vegetables were chopped",
+                "The kettle started whistling"
+            ],
+            "answer": "They were baked in the oven"
+        },
+        {
+            "question": "Which step probably comes last in preparing a meal?",
+            "options": [
+                "Serving the dishes on the table",
+                "Mixing ingredients",
+                "Chopping vegetables",
+                "Placing dough on the rolling pin"
+            ],
+            "answer": "Serving the dishes on the table"
+        },
+        {
+            "question": "What is the correct order for these kitchen tasks?",
+            "options": [
+                "Chop vegetables → Mix ingredients → Bake → Cool cookies",
+                "Bake → Chop vegetables → Cool cookies → Mix ingredients",
+                "Mix ingredients → Chop vegetables → Cool cookies → Bake",
+                "Cool cookies → Chop vegetables → Bake → Mix ingredients"
+            ],
+            "answer": "Chop vegetables → Mix ingredients → Bake → Cool cookies"
+        }
+    ]
+}

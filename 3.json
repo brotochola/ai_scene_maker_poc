@@ -1,0 +1,83 @@
+{
+    "input_info": {
+        "student_grade": "1st grade",
+        "theme": [
+            "getting ready for school",
+            "getting dressed"
+        ],
+        "therapy_goal": "Parts of Speech",
+        "scene_type": "medium shot"
+    },
+    "scene_description": "In a bright and cheerful bedroom, the morning sun streams through a window with yellow curtains, casting a warm glow over the colorful walls decorated with drawings and stickers. A soft carpet covers the floor, and a small wooden dresser sits against the wall. The room is filled with the sounds of birds chirping outside and the faint hum of a running clock. A backpack rests by the door, ready for the school day, while the child is in the middle of choosing clothes to wear, creating a lively, busy, and playful atmosphere.",
+    "items": [
+        {
+            "type": "child",
+            "description": "A young child standing in the middle of the room, wearing pajamas, holding a blue shirt in one hand and a pair of socks in the other. Their hair is slightly messy from sleep, and they are looking at their dresser, deciding what to wear. The child has a curious and excited expression on their face, and their feet are bare on the soft carpet."
+        },
+        {
+            "type": "dresser",
+            "description": "A small wooden dresser with three drawers, slightly open. Clothes peek out from the drawers at odd angles. A small lamp with a yellow shade sits on top, and a few colorful socks are scattered nearby."
+        },
+        {
+            "type": "window",
+            "description": "A window with yellow curtains tied to the side. Sunlight filters through, casting playful shadows on the floor and walls. Outside, green leaves of a tree gently sway in the breeze."
+        },
+        {
+            "type": "backpack",
+            "description": "A small red backpack resting near the door, upright and zipped closed, ready to be filled for school."
+        }
+    ],
+    "questions": [
+        {
+            "question": "Which word in this sentence is a noun? 'The child holds a blue shirt.'",
+            "options": [
+                "child",
+                "holds",
+                "blue",
+                "a"
+            ],
+            "answer": "child"
+        },
+        {
+            "question": "Which word in this sentence is a verb? 'The child is choosing socks.'",
+            "options": [
+                "child",
+                "choosing",
+                "socks",
+                "is"
+            ],
+            "answer": "choosing"
+        },
+        {
+            "question": "Which word in this sentence is an adjective? 'The lamp has a yellow shade.'",
+            "options": [
+                "lamp",
+                "has",
+                "yellow",
+                "shade"
+            ],
+            "answer": "yellow"
+        },
+        {
+            "question": "Which word in this sentence is a pronoun? 'They are looking at the dresser.'",
+            "options": [
+                "They",
+                "looking",
+                "dresser",
+                "at"
+            ],
+            "answer": "They"
+        },
+        {
+            "question": "Which word in this sentence is an article? 'A backpack rests by the door.'",
+            "options": [
+                "backpack",
+                "rests",
+                "by",
+                "A"
+            ],
+            "answer": "A"
+        }
+    ],
+    "scene_type": "medium shot (subject from waist up plus immediate details)"
+}

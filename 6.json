@@ -1,0 +1,121 @@
+{
+    "input_info": {
+        "student_grade": "3rd grade",
+        "theme": [
+            "snowboarding",
+            "snow",
+            "winter"
+        ],
+        "therapy_goal": "Semantics-wh-questions-mixed",
+        "scene_type": "close up (only face or object with 2–4 details)"
+    },
+    "scene_description": "The camera zooms in tightly on a young snowboarder’s face, cheeks rosy from the cold and eyes sparkling with excitement. Tiny snowflakes cling to their eyelashes, and a frosty mist rises gently from their breath. The background is softly blurred, hinting at a sparkling white slope and a few distant snow-covered pine trees. The bright winter sunlight glints off the snow, making the scene feel crisp, chilly, and full of energy.",
+    "items": [
+        "A child wearing a colorful winter jacket and a knitted hat, their face flushed from exertion, with goggles pushed up on their forehead.",
+        "Snowflakes resting on the child’s eyelashes and hat, catching the sunlight.",
+        "Frosty breath curling in the cold air, visible in front of the child’s mouth.",
+        "The tip of a snowboard visible at the bottom corner of the frame, angled slightly as if ready for a descent."
+    ],
+    "questions": [
+        {
+            "question": "Who is the main person in the scene?",
+            "options": [
+                "A snowboarder",
+                "A skier",
+                "A snowman",
+                "A penguin"
+            ],
+            "answer": "A snowboarder"
+        },
+        {
+            "question": "What color is the child’s jacket?",
+            "options": [
+                "Colorful",
+                "Black",
+                "White",
+                "Brown"
+            ],
+            "answer": "Colorful"
+        },
+        {
+            "question": "Where are the snowflakes in the scene?",
+            "options": [
+                "On the child’s eyelashes and hat",
+                "Only on the ground",
+                "On the distant trees",
+                "On the snowboard only"
+            ],
+            "answer": "On the child’s eyelashes and hat"
+        },
+        {
+            "question": "What can you see coming from the child’s mouth?",
+            "options": [
+                "Frosty breath",
+                "Smoke",
+                "Steam from hot chocolate",
+                "Nothing"
+            ],
+            "answer": "Frosty breath"
+        },
+        {
+            "question": "What is the background like in the scene?",
+            "options": [
+                "Softly blurred with snow-covered trees",
+                "A busy city street",
+                "A sunny beach",
+                "A desert"
+            ],
+            "answer": "Softly blurred with snow-covered trees"
+        },
+        {
+            "question": "What is visible at the bottom of the frame?",
+            "options": [
+                "The tip of a snowboard",
+                "A sled",
+                "A pair of boots",
+                "A hockey stick"
+            ],
+            "answer": "The tip of a snowboard"
+        },
+        {
+            "question": "What is the child wearing on their forehead?",
+            "options": [
+                "Goggles",
+                "A crown",
+                "Sunglasses",
+                "Nothing"
+            ],
+            "answer": "Goggles"
+        },
+        {
+            "question": "How does the child look in the scene?",
+            "options": [
+                "Excited and flushed",
+                "Bored and sleepy",
+                "Angry and frowning",
+                "Scared and crying"
+            ],
+            "answer": "Excited and flushed"
+        },
+        {
+            "question": "What time of year is suggested by the scene?",
+            "options": [
+                "Winter",
+                "Summer",
+                "Spring",
+                "Autumn"
+            ],
+            "answer": "Winter"
+        },
+        {
+            "question": "What is the child about to do based on the snowboard position?",
+            "options": [
+                "Descend the slope",
+                "Build a snowman",
+                "Drink hot chocolate",
+                "Fly a kite"
+            ],
+            "answer": "Descend the slope"
+        }
+    ]
+}
